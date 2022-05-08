@@ -1,0 +1,77 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?7ebf36cdc1e5c156e82896d39c9725a5") format("truetype"),
+url("./flaticon.woff?7ebf36cdc1e5c156e82896d39c9725a5") format("woff"),
+url("./flaticon.woff2?7ebf36cdc1e5c156e82896d39c9725a5") format("woff2"),
+url("./flaticon.eot?7ebf36cdc1e5c156e82896d39c9725a5#iefix") format("embedded-opentype"),
+url("./flaticon.svg?7ebf36cdc1e5c156e82896d39c9725a5#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "wifi": "\f101",
+    "user": "\f102",
+    "high-speed": "\f103",
+    "call": "\f104",
+    "tv": "\f105",
+    "placeholder": "\f106",
+    "envelope": "\f107",
+    "clock": "\f108",
+    "wifi-router": "\f109",
+    "devices": "\f10a",
+    "telephone": "\f10b",
+    "wifi-1": "\f10c",
+    "support": "\f10d",
+);
+
+.flaticon-wifi:before {
+    content: map-get($flaticon-map, "wifi");
+}
+.flaticon-user:before {
+    content: map-get($flaticon-map, "user");
+}
+.flaticon-high-speed:before {
+    content: map-get($flaticon-map, "high-speed");
+}
+.flaticon-call:before {
+    content: map-get($flaticon-map, "call");
+}
+.flaticon-tv:before {
+    content: map-get($flaticon-map, "tv");
+}
+.flaticon-placeholder:before {
+    content: map-get($flaticon-map, "placeholder");
+}
+.flaticon-envelope:before {
+    content: map-get($flaticon-map, "envelope");
+}
+.flaticon-clock:before {
+    content: map-get($flaticon-map, "clock");
+}
+.flaticon-wifi-router:before {
+    content: map-get($flaticon-map, "wifi-router");
+}
+.flaticon-devices:before {
+    content: map-get($flaticon-map, "devices");
+}
+.flaticon-telephone:before {
+    content: map-get($flaticon-map, "telephone");
+}
+.flaticon-wifi-1:before {
+    content: map-get($flaticon-map, "wifi-1");
+}
+.flaticon-support:before {
+    content: map-get($flaticon-map, "support");
+}
